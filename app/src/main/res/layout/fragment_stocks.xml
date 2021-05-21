@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/std_elevation"
+    android:layout_margin="@dimen/std_margin"
+    app:cardCornerRadius="@dimen/std_radius"
+    android:padding="@dimen/std_padding">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/menu_btn">
+            <TextView
+                android:id="@+id/s_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STOCK NAME" />
+            <TextView
+                android:id="@+id/avail_qty_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AVAILABLE QUANTITY DETAILS" />
+            <TextView
+                android:id="@+id/price_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRICE PER UNIT DETAILS" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_menu"
+            android:background="@color/colorWhite"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

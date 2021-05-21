@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/trans_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction Date"
+        android:layout_margin="@dimen/std_margin"/>
+    <TextView
+        android:id="@+id/stock_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock Name"
+        android:layout_margin="@dimen/std_margin"/>
+    <TextView
+        android:id="@+id/trans_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity bought"
+        android:layout_margin="@dimen/std_margin"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_margin="@dimen/std_margin"/>
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discount"
+        android:layout_margin="@dimen/std_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status"
+            android:layout_margin="@dimen/std_margin"
+            android:layout_weight="9"/>
+
+        <ImageButton
+            android:id="@+id/edit_payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_baseline_edit_24"
+            tools:src="@drawable/ic_baseline_edit_24" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_ps_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Switch
+            android:id="@+id/new_ps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status"
+            android:textOff="Not paid"
+            android:textOn="Paid"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:layout_margin="@dimen/std_margin"/>
+    <TextView
+        android:id="@+id/customer_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Email"
+        android:layout_margin="@dimen/std_margin"/>
+    <TextView
+        android:id="@+id/customer_phn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Phone"
+        android:layout_margin="@dimen/std_margin"/>
+    <TextView
+        android:id="@+id/customer_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Address"
+        android:layout_margin="@dimen/std_margin"/>
+</LinearLayout>
